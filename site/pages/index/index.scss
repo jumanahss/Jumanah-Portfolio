@@ -1,0 +1,485 @@
+// Home
+
+$padding: 25px;
+$font: helvetica;
+$dark: rgba( 0, 0, 0, 1 );
+$light: rgba( 0, 0, 0, 0.1 );
+$white: rgba( 255, 255, 255, 1 );
+$black: rgba( 0, 0, 0, 1 );
+$vheight: 75vh;
+$highlight: #f05e2b;
+
+body,
+html
+{
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+
+	font-family: $font;
+}
+
+
+.page-title-and-image
+{
+	flex-direction: row;
+	align-items: flex-end;
+
+	font-size: 28px;
+}
+
+.mineral
+{
+	width: 80px;
+	height: 100px;
+	margin-left: 20px;
+	background-image: url( 'images/mineral.svg' );
+}
+nav
+{
+	flex-flow: row;
+	align-items: center;
+
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: $padding;
+	z-index: 10;
+	a
+	{
+		text-decoration: none;
+	}
+	h1
+	{
+		margin-right: auto;
+		// background: url( 'images/jujLogo.png' )no-repeat center center;
+		// background-size: cover;
+
+		color: white;
+		font-weight: 800;
+		font-size: 20px;
+		letter-spacing: 0.5px;
+		// text-indent: -99999em;
+	}
+	ul
+	{
+		flex-flow: row;
+
+		display: flex;
+		margin-left: auto;
+		li
+		{
+			margin-right: 15px;
+		}
+		a
+		{
+			color: white;
+			font-weight: 100;
+			letter-spacing: 1px;
+			text-decoration: none;
+		}
+		a:hover
+		{
+			background-color: white;
+
+			color: $dark;
+		}
+		li:last-child
+		{
+			margin-right: 0px;
+		}
+	}
+}
+
+header
+{
+	align-items: center;
+	justify-content: center;
+
+	display: flex;
+	overflow: hidden;
+	height: $vheight;
+	background-color: $black;
+	h3,
+	span
+	{
+		position: relative;
+		z-index: 50;
+
+		color: white;
+		font-weight: bold;
+		font-size: 64px;
+	}
+	h3
+	{
+		border-bottom: 1px solid $white;
+	}
+	span
+	{
+		margin-top: 5px;
+		padding: 5px $padding;
+
+		font-weight: 100;
+		font-size: 18px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	.wrap
+	{
+		align-items: center;
+
+		display: flex;
+		position: fixed;
+		width: 100%;
+		top: 50% - calc( 85vh/2 );
+		left: 50%;
+		z-index: 50;
+
+		transform: translate( -50%, -50% );
+	}
+	video
+	{
+		opacity: 0.8;
+		position: fixed;
+		width: auto;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		top: 50%;
+		left: 50%;
+
+		transform: translate( -50%, -50% );
+	}
+}
+h2
+{
+	display: none;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: 3px;
+
+	color: $light;
+	font-weight: bold;
+	font-size: 62px;
+}
+
+.work,
+.experience,
+.awards
+{
+	position: relative;
+	padding: 0px $padding;
+	z-index: 50;
+	.wrap
+	{
+		width: 100%;
+		max-width: 960px;
+		margin: auto;
+	}
+	ul
+	{
+		flex-flow: row;
+		flex-wrap: wrap;
+
+		display: flex;
+		li
+		{
+			width: calc( 100%/3 );
+			min-height: 250px;
+		}
+	}
+}
+
+.work
+{
+	padding-top: 45px;
+	border-top: 5px solid $white;
+	background-color: $white;
+	li
+	{
+		align-items: center;
+		justify-content: center;
+
+		display: flex;
+		cursor: hand;
+		cursor: pointer;
+		background-color: $dark;
+
+		color: white;
+		h3
+		{
+			opacity: 0;
+			pointer-events: none;
+
+			font-weight: 800;
+			font-size: 28px;
+
+			transition: all 250ms ease-out;
+			transform: translate( 0px, 5px );
+		}
+	}
+	li:hover
+	{
+		h3
+		{
+			opacity: 1;
+
+			transform: translate( 0px, 0px );
+		}
+		.imdb-link
+		{
+			opacity: 0.6;
+			width: 20px;
+			height: 20px;
+
+			color: white;
+			text-decoration: none;
+
+			transform: translate( 0px, 3px );
+		}
+		.imdb-link:hover
+		{
+			opacity: 1;
+			background-color: rgba( 255, 255, 255, 1 );
+
+			color: rgba( 0, 0, 0, 1 );
+		}
+		.video-link
+		{
+			height: 100%;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			background-color: rgba( 0, 0, 0, 0.4 );
+
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+		}
+	}
+	*
+	{
+		position: relative;
+		z-index: 50;
+	}
+	.video-link
+	{
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+		z-index: 40;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.01+100 */
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#03000000',GradientType=0 ); /* IE6-9 */
+
+		transition: all 250ms ease-out;
+	}
+	.imdb-link
+	{
+		align-items: center;
+		justify-content: center;
+
+		display: flex;
+		opacity: 0;
+		width: 26px;
+		height: 26px;
+		padding: 5px;
+		border: 1px solid rgba( 255, 255, 255, 1 );
+		border-radius: 20px;
+
+		color: white;
+		font-weight: 100;
+		font-size: 12px;
+		text-decoration: none;
+
+		transition: all 250ms ease-out;
+		transform: translate( 0px, 6px );
+	}
+}
+
+.awards
+{
+	flex-flow: column;
+
+	padding: 100px $padding;
+	background-color: white;
+	ul
+	{
+		li
+		{
+			display: flex;
+			width: calc( 100%/3 - (20px/3) );
+			padding: $padding $padding $padding 0px;
+			background-color: white;
+		}
+		li:nth-of-type(2)
+		{
+			margin: 0px 10px;
+		}
+	}
+	a
+	{
+		color: $dark;
+		text-decoration: none;
+	}
+	a:hover
+	{
+		color: $highlight;
+		text-decoration: underline;
+		text-shadow: 0px 2px 5px rgba( 0, 0, 0, 0.15 );
+	}
+	h3
+	{
+		margin-bottom: 15px;
+	}
+	.description
+	{
+		margin-top: 5px;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid rgba( 0, 0, 0, 0.05 );
+
+		font-weight: 100;
+		font-style: italic;
+		font-size: 12px;
+		line-height: 1.5em;
+	}
+}
+.experience
+{
+	background: url(images/clientsBg.jpg)no-repeat center center fixed;
+	background-size: cover;
+	li
+	{
+		align-items: center;
+		justify-content: center;
+
+		display: flex;
+		max-height: 200px;
+	}
+	img
+	{
+		height: 100%;
+		max-height: 200px;
+	}
+}
+.contact
+{
+	position: relative;
+	z-index: 100;
+	background-color: $dark;
+	.wrap
+	{
+		flex-flow: row;
+		flex-wrap: wrap;
+
+		display: flex;
+		max-width: 960px;
+		margin: auto;
+		padding: $padding;
+	}
+	ul
+	{
+		flex-flow: column;
+
+		display: flex;
+		width: 50%;
+		padding: 25px 0px;
+		li
+		{
+			display: inline;
+			margin-bottom: 5px;
+
+			color: white;
+			font-weight: 100;
+			font-size: 14px;
+			a
+			{
+				display: inline-block;
+				width: auto;
+
+				color: white;
+				font-weight: 100;
+				text-decoration: none;
+			}
+			a:hover
+			{
+				color: $highlight;
+			}
+		}
+		li:first-of-type
+		{
+			margin-right: 10px;
+			margin-bottom: 15px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid $white;
+
+			font-weight: bold;
+			font-size: 14px;
+		}
+	}
+}
+
+@media( max-width: 640px )
+{
+	.main
+	{
+		flex-flow: column;
+
+		height: $vheight;
+		> ul
+		{
+			margin-top: auto;
+			margin-left: inherit;
+		}
+	}
+	header
+	{
+		h3
+		{
+			font-size: 36px;
+		}
+	}
+	.work,
+	.experience,
+	.awards
+	{
+		ul
+		{
+			li
+			{
+				width: 100%;
+			}
+		}
+	}
+	.awards
+	{
+		width: auto;
+
+		text-align: center;
+		.description
+		{
+			max-width: 80%;
+			margin: auto;
+		}
+	}
+	.contact
+	{
+		ul
+		{
+			width: 100%;
+			padding: 25px 50px;
+		}
+		ul:last-of-type
+		{
+			padding-top: 0px;
+		}
+	}
+}

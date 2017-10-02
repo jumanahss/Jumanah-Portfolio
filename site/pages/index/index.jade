@@ -1,0 +1,166 @@
+include ../../common-components/head/head.jade
+
+doctype html
+html
+	+head( 'Jumanah Shaheen | Portfolio Site' )
+	body
+		#skrollr-body
+			nav( class="main"
+				data-anchor-target="#headerTarget"
+				data-0="opacity: 1; top: 0px;"
+				data--100-top="opacity: 0; top: -15px;" )
+				a(href="/")
+					h1
+						| Jumanah Shaheen
+				ul
+					li.nav-item
+						a( href='#work' )
+							| work
+					li.nav-item
+						a( href='#awards' )
+							| awards
+					li.nav-item
+						a( href='#experience' )
+							| experience
+					li.nav-item
+						a( href='#contact' )
+							| contact
+			header( id="headerTarget" )
+				.wrap( 
+				data-anchor-target="#headerTarget"
+				data-0="opacity: 1; top: calc( 50% - (20vh/2));"
+				data-center-bottom="opacity: 0;  top: calc( 40% - (20vh/2))"
+				)
+					h3 Animation & VFX
+					span production
+				video(width='320', height='240', loop, autoplay="true")
+					source(src='videos/videoBg.mp4', type='video/mp4')
+					source(src='videos/videoBg.ogg', type='video/ogg')
+			.work( id="work" )
+				.wrap
+					h2 // Work
+					ul
+						li( style="background:url(images/advantages_1.jpg)no-repeat center center; background-size: cover;" alt="advantages" href="http://vimeo.com/123123" class="mfp-iframe" )
+							h3 Advantages
+							a( href="http://www.imdb.com/title/tt3090670/?ref_=fn_al_tt_1" class="imdb-link" target="_blank" ) i
+							a( href="https://vimeo.com/83573383" class="video-link mfp-iframe" )
+						li( style="background:url(images/fruitvaleStation_3.jpg)no-repeat center center; background-size: cover;" alt="Fruitvale Station" )
+							h3 Fruitvale Station
+							a( href="http://www.imdb.com/title/tt2334649/" class="imdb-link" target="_blank" ) i
+							a( href="https://vimeo.com/68594819" class="video-link mfp-iframe" )
+						li( style="background:url(images/savingLincoln_1.jpg)no-repeat center center; background-size: cover;" alt="Saving Lincoln" )
+							h3 Saving Lincoln
+							a( href="http://www.imdb.com/title/tt2034098/?ref_=fn_al_tt_1" class="imdb-link" target="_blank" ) i
+							a( href="https://vimeo.com/57181865" class="video-link mfp-iframe" )
+						li( style="background:url(images/theeb_1.jpg)no-repeat center center; background-size: cover;" alt="Theeb" )
+							h3 Theeb
+							a( href="http://www.imdb.com/title/tt3170902/" class="imdb-link" target="_blank" ) i
+							a( href="https://vimeo.com/121668413" class="video-link mfp-iframe" )
+						li( style="background:url(images/alienHunter_2.jpg)no-repeat center center; background-size: cover;" alt="Theeb" )
+							h3 Alien Hunter
+							a( href="http://www.imdb.com/title/tt4727896/?ref_=fn_al_tt_3" class="imdb-link" target="_blank" ) i
+							a( href="https://vimeo.com/130048660" class="video-link mfp-iframe" )
+						li( style="background:url(images/curpigeon_1.jpg)no-repeat center center; background-size: cover;" alt="Curpigeon" )
+							h3 Curpigeon
+							a( href="http://www.imdb.com/title/tt4547358/" class="imdb-link" target="_blank" ) i
+							a( href="https://vimeo.com/146667753" class="video-link mfp-iframe" )
+						li( style="background:url(images/madGod_3.jpg)no-repeat center center; background-size: cover;" alt="madGod" )
+							h3 Mad God
+							a( href="http://www.imdb.com/title/tt3861428/" class="imdb-link" target="_blank" ) i
+							a( href="https://vimeo.com/94468423" class="video-link mfp-iframe" )
+						li( style="background:url(images/nba_1.jpg)no-repeat center center; background-size: cover;" alt="NBA" )
+							h3 NBA
+							//- a( href="http://www.imdb.com/title/tt3861428/" class="imdb-link" target="_blank" ) i
+							a( href="https://vimeo.com/164216510" class="video-link mfp-iframe" )
+			.awards( id="awards" )
+				.wrap
+					h2 // Awards
+					ul
+						li
+							h3 Theeb
+							.description 
+								a( href="http://www.esquireme.com/culture/film-and-tv/theeb-conquers-venice" target="_blank" ) Orizzonti Award
+							.description 
+								a( href="http://www.bafta.org/film/awards/outstanding-debut" target="_blank" ) BAFTA Award
+							.description 
+								a( href="http://oscar.go.com/news/nominations/theeb-gets-best-foreign-language-film-oscar-nomination-2016" target="_blank" ) Oscar Nomination - Foreign Language Film
+							.description 
+								a( href="http://www.academyart.edu/about-us/news-events/news/2016/june/are-you-interested-in-animation-visual-effects-film-production" target="_blank" ) AAU Recognition
+
+						li
+							h3 Fruitvale Station
+							.description 
+								a( href="http://www.filmindependent.org/press/press-releases/winners-announced-for-2014-film-independent-spirit-awards/" target="_blank" ) Independent Spirit Award
+							//- .description Gotham Independent Film Award for Breakthrough Actor
+							//- .description Gotham Independent Film Award for Breakthrough Director
+							//- .description Un Certain Regard Avenir Prize 
+							.description 
+								a( href="http://www.naacp.org/news/entry/45th-naacp-image-award-winners" target="_blank" ) NAACP Image Award
+							.description 
+								a( href="http://www.producersguild.org/news/150024/Producers-Guild-To-Honor-Fruitvale-Station-With-2014-Stanley-Kramer-Award.htm" target="_blank" ) Producers Guild of America Award
+							//- .description New York Film Critics Circle Award for Best First Film
+						li
+							h3 Advantageous
+							.description 
+								a( href="http://www.hitfix.com/in-contention/2015-sundance-film-festival-award-winners" target="_blank" ) Sundance - US Dramatic Jury Award
+							.description 
+								a( href="http://www.filmindependent.org/press/press-releases/31st-film-independent-spirit-awards-nominations-announced/" target="_blank" ) Film Independent Spirit Awards 2016 Nomination
+							.link
+			.experience( id="experience" )
+				.wrap
+					ul
+						li( 
+						data-bottom-top="opacity: -.5; transform: scale(.7);" 
+						data-bottom="opacity: 1; transform: scale(1);"
+						)
+							img( src="images/cisco.svg" alt="Cisco" )
+						li( 
+						data-bottom-top="opacity: -.5; transform: scale(.7);" 
+						data-bottom="opacity: 1; transform: scale(1);"
+						)
+							img( src="images/nbtv.svg" alt="NBA TV" )
+						li( 
+						data-bottom-top="opacity: -.5; transform: scale(.7);" 
+						data-bottom="opacity: 1; transform: scale(1);"
+						)
+							img( src="images/hp.svg" alt="HP" )
+						li( 
+						data-bottom-top="opacity: -.5; transform: scale(.7);" 
+						data-bottom="opacity: 1; transform: scale(1);"
+						)
+							img( src="images/kenwood.svg" alt="Kenwood" )
+						li( 
+						data-bottom-top="opacity: -.5; transform: scale(.7);" 
+						data-bottom="opacity: 1; transform: scale(1);"
+						)
+							img( src="images/symantec.svg" alt="Symantec" )
+						li( 
+						data-bottom-top="opacity: -.5; transform: scale(.7);" 
+						data-bottom="opacity: 1; transform: scale(1);"
+						)
+							img( src="images/invision.svg" alt="Invision" )
+						li( 
+						data-bottom-top="opacity: -.5; transform: scale(.7);" 
+						data-bottom="opacity: 1; transform: scale(1);"
+						)
+							img( src="images/gcx.svg" alt="gcx" )
+			.contact( id="contact" )
+				.wrap
+					ul.info
+						li contact
+						li.email
+							a( href="mailto:jumanah.s.a@gmail.com" target="_blank" ) jumanah.s.a@gmail.com
+						li.location
+							| Los Angeles, CA.
+						li.currently
+							a( href="http://www.methodstudios.com/" target="_blank" ) @MethodStudios
+					ul.social
+						li social
+						li.insta
+							a( href="https://www.instagram.com/jumanah_shaheen/" target="_blank" ) Instagram
+						li.twitter
+							a( href="https://twitter.com/JumanahSS" target="_blank" ) Twitter
+						li.vimeo
+							a( href="https://vimeo.com/user39786831" target="_blank" ) Vimeo
+						li.linkedin
+							a( href="https://www.linkedin.com/in/jumanah-shaheen-42b5708b" target="_blank" ) Linkedin

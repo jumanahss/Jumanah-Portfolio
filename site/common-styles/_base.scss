@@ -2,51 +2,51 @@
 
 ::selection
 {
-	background-color: #f9ec67;
+    background-color: #f9ec67;
 }
 
 ::placeholder
 {
-	color: #aea9a9;
+    color: #aea9a9;
 }
 
 body,
 html
 {
-	background-color: $white;
+    font-family: $helvetica;
 
-	color: $black;
-	font-family: $helvetica;
+    color: $black;
+    background-color: $white;
 }
 
 h1
 {
-	font-size: 22px;
-	line-height: 32px;
+    font-size: 22px;
+    line-height: 32px;
 }
 
 p
 {
-	font-size: 16px;
-	line-height: 24px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 a
 {
-	color: #0f6ad4;
+    color: #0f6ad4;
 
-	&:hover
-	{
-		color: #5da8ff;
-	}
+    &:hover
+    {
+        color: #5da8ff;
+    }
 
-	&:active
-	{
-		color: #0e62c2;
-	}
+    &:active
+    {
+        color: #0e62c2;
+    }
 }
 
 input
 {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
